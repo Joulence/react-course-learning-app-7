@@ -7,8 +7,6 @@ import useHttp from './hooks/use-http';
 function App() {
   const [tasks, setTasks] = useState([]);
 
-
-
   const { isLoading, error, sendRequest: fetchTasks } = useHttp();
 
   useEffect(() => {
